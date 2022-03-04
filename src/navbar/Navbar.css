@@ -1,0 +1,137 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+.navbar {
+  background-color: #fff; 
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+.nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  max-width: 1500px;
+}
+.main-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* background-color: rgba(0, 0, 0, 0.3); */
+}
+.logo {
+  margin-left: 20px;
+  cursor: pointer;
+  width: 90px;
+}
+.nav-menu {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  margin-right: 2rem;
+  margin-bottom: 0;
+}
+.nav-links {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  border-bottom: 3px solid transparent;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+.nav-links:hover {
+  color: var(--CTA);
+}
+.nav-item {
+  margin-right: 1rem;
+}
+
+.nav-item:after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0;
+  background: transparent;
+  transition: width 0.7s ease, background-color 0.5s ease;
+}
+
+.nav-item:hover:after {
+  width: 100%;
+  background: var(--CTA);
+}
+.nav-links.active {
+  color: var(--CTA);
+  font-weight: 500;
+}
+
+.nav-icon {
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+  .navbar{
+    position: fixed;
+  }
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 80px;
+    left: -110%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .nav-menu.active {
+    background: #d1f8ff;
+    left: 0px;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+  .nav-item .active {
+    color: #EAB543;
+    border: none;
+  }
+  .nav-item {
+   margin: 10px 1rem 10px 0rem;
+   font-size: 18px;
+  }
+  .nav-links{
+    font-size: 30px;
+    color: #000;
+  }
+
+  .nav-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    transform: translate(-100%, 25%);
+    padding: 5px;
+    border: 1px solid #EAB543;
+    padding: 4px;
+    cursor: pointer;
+    color: #EAB543;
+  }
+}

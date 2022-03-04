@@ -1,0 +1,17 @@
+.project_card{
+    height: 300px;
+}
+.project_card img{
+    height: auto;
+}
+@media screen and (max-width:900px){
+    .project_card img{
+        height: inherit;
+    }
+    .project_card::before {
+        opacity: .1;
+      }
+      .Projects_section{
+          margin-top: 90px;
+      }
+}

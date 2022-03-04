@@ -1,0 +1,36 @@
+
+
+.header_sec{
+  background: linear-gradient(rgba(241,250,255,.5), rgba(241,250,255,.4)),
+  url('http://st.ourhtmldemo.com/new/Aircare/images/slides/1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 70vh;
+}
+.heade_content{
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 960px){
+  #carouselExampleFade{
+      margin-top: 5rem;  
+    }
+    .header_sec{
+      background:var(--section_color);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 60vh;
+    }
+    .heade_content{
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+}

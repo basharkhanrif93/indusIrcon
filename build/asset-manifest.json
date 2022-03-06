@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/indusIrcon/static/css/main.e058d790.css",
+    "main.js": "/indusIrcon/static/js/main.1e8d4c55.js",
+    "index.html": "/indusIrcon/index.html",
+    "main.e058d790.css.map": "/indusIrcon/static/css/main.e058d790.css.map",
+    "main.1e8d4c55.js.map": "/indusIrcon/static/js/main.1e8d4c55.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e058d790.css",
+    "static/js/main.1e8d4c55.js"
+  ]
+}
